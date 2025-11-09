@@ -1,0 +1,1 @@
+print(lst1) # Print []
