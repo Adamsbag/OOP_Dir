@@ -23,6 +23,22 @@ lst2 = [1,2,3,5,11,9,6,7,4,8,10,11]
 print(reversed(lst2)) # Print <list_reverseiterator object at 0x00000228E4B87FA0>
 print(list(reversed(lst2))) # Print [11, 10, 8, 4, 7, 6, 9, 11, 5, 3, 2, 1] solve the reversed iterator issue
 print(lst2) # Print [1, 2, 3, 5, 11, 9, 6, 7, 4, 8, 10, 11]
+def fun(lst = [1,2]):
+    lst.append(100)
+    return lst
+lst1 = fun([])
+lst2 = fun([])
+lst3 = fun([])
+lst4 = fun([])
+print(lst1,lst2,lst3,lst4)  
+# prints:
+# [100] [100] [100] [100]       
+# Explanation:
+# In this code, the function `fun` is called four times with an empty list as an argument.
+# Each time, a new empty list is created and passed to the function.
+# Therefore, each call to `fun` appends 100 to a different list, resulting in four separate lists,
+# each containing only the value 100.
+
 
 
 
