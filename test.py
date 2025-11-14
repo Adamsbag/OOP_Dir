@@ -1,4 +1,3 @@
-# I am trying to code a scientific caculator walk me through the steps to create it. and use tkinter for the GUI
 #Creating a scientific calculator using Tkinter involves several steps. Below is a step-by-step guide to help you build a basic scientific calculator with a graphical user interface (GUI).
 import tkinter as tk
 import math
